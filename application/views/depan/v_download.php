@@ -1,5 +1,5 @@
-<div class="recent_event_area section__padding">
-    <div class="container">
+<div class="recent_event_area">
+    <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
                 <div class="section_title text-center mb-70">
@@ -27,19 +27,17 @@
                         </thead>
                         <tbody>
                             <?php
-                      $no=1;
-                      foreach ($data->result() as $row):
-                    ?>
-                            <tr>
-                                <td><?php echo $no++;?></td>
-                                <td><?php echo $row->file_judul;?></td>
-                                <td><?php echo $row->tanggal;?></td>
-                                <td><?php echo $row->file_oleh;?></td>
-                                <td style="text-align:right;"><a
-                                        href="<?php echo site_url('download/get_file/'.$row->file_id);?>"
-                                        class="btn btn-info">Download</a></td>
-                            </tr>
-                            <?php endforeach;?>
+                            $no = 1;
+                            foreach ($data->result() as $row) :
+                            ?>
+                                <tr>
+                                    <td><?php echo $no++; ?></td>
+                                    <td><?php echo $row->file_judul; ?></td>
+                                    <td><?php echo $row->tanggal; ?></td>
+                                    <td><?php echo $row->file_oleh; ?></td>
+                                    <td style="text-align:right;"><a href="<?php echo site_url('download/get_file/' . $row->file_id); ?>" class="btn btn-info">Download</a></td>
+                                </tr>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>

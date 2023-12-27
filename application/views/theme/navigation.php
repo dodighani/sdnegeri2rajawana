@@ -17,11 +17,11 @@
                                     <li><a href="<?php echo base_url(''); ?>">home</a></li>
                                     <li><a href="#">Profile <i class="ti-angle-down"></i></a>
                                         <ul class="submenu">
-                                            <li><a href="#">Tentang Sekolah</a>
+                                            <!-- <li><a href="#">Tentang Sekolah</a>
                                                 <ul class="submenu">
                                                     <li>Hello</li>
                                                 </ul>
-                                            </li>
+                                            </li> -->
                                             <li><a href="<?php echo site_url('about'); ?>">Sambutan Kepala Sekolah</a></li>
                                             <li><a href="<?php echo site_url('guru'); ?>">Daftar Guru</a></li>
                                             <li><a href="<?php echo site_url('visi'); ?>">Visi dan Misi</a></li>
